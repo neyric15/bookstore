@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '>= 5.0.0.0.rc2', '< 5.1'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem 'mysql2'
+# gem 'mysql2'
 
 gem 'devise'
 
@@ -55,3 +55,13 @@ group :development do
   gem 'spring'
 end
 
+group :development do
+ 
+  gem 'mysql2'
+end
+
+group :production do
+ 
+  gem 'pg'
+  gem 'rails_12factor'
+end
